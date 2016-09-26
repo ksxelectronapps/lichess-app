@@ -6,5 +6,5 @@ const {indent, crlf} = require('./lib/package-json-config.json')
 const {parse, stringify} = JSON
 const ENCODING = {encoding: 'utf8'}
 const jsonobj = parse(readFileSync(file, ENCODING))
-const jsonstr = stringify(jsonobj, undefined, indent).split('\n').join(crlf ? CRLF : LF)
+const jsonstr = stringify(jsonobj, undefined, indent).split('\n').join(crlf ? '\r\n' : '\n')
 writeFileSync(file, jsonstr, ENCODING)
