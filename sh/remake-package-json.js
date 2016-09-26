@@ -8,3 +8,4 @@ const ENCODING = {encoding: 'utf8'}
 const jsonobj = parse(readFileSync(file, ENCODING))
 const jsonstr = stringify(jsonobj, undefined, indent).split('\n').join(crlf ? '\r\n' : '\n')
 writeFileSync(file, jsonstr, ENCODING)
+stdout.write('Done.\n')
