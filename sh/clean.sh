@@ -1,4 +1,6 @@
 
+CLEANLIST="$(pwd)/sh/lib/clean-list.sh"
+
 compdir () (
   [ "$1" == "$2" ] || [ "$1" == "$2/" ] || [ "$1" == "$2\\" ]
 )
@@ -18,7 +20,7 @@ cleandir () (
   done
   cd $1
   echo Directory "$1"
-  rm -rfv $(./sh/lib/clean-list.sh)
+  rm -rfv $($CLEANLIST)
 )
 
 cleandir $(pwd)
