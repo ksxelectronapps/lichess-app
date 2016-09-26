@@ -18,7 +18,7 @@ cleandir () (
   done
   cd $1
   echo Directory "$1"
-  rm -rfv tmp temp *.tmp *.temp *.log npm-debug.log*
+  rm -rfv $(./sh/lib/clean-list.sh)
 )
 
 cleandir $(pwd)
