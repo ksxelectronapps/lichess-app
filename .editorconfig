@@ -1,0 +1,12 @@
+root = true
+insert_final_new_line = true
+
+[*.{js,sh,json,yml,md}]
+charset = utf-8
+
+[*.{js,json,md,sh}]
+indent_style = space
+indent_size = 2
+
+[*.{json,sh}]
+end_of_line = lf

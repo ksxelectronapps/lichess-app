@@ -1,0 +1,13 @@
+{
+  "version": "0.0.0",
+  "main": "index.js",
+  "author": "Hoàng Văn Khải <hvksmr1996@gmail.com>",
+  "devDependencies": {
+    "standard": "8.0.0"
+  },
+  "scripts": {
+    "clean": "bash -c './sh/clean.sh'",
+    "fix": "bash -c './sh/fix.sh'",
+    "test": "bash -c './sh/test.sh'"
+  }
+}
