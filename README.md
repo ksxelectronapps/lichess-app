@@ -1,5 +1,5 @@
-# node-ignorers
+# node-startup
 
-My Node.js repos' .gitignore and .npmignore
+My Node.js startup files
 
 **Usage:** Just add them to your startup project
