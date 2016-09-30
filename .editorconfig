@@ -9,12 +9,9 @@ insert_final_new_line = true
 charset = utf-8
 
 # tab
-[*.{js,json,md,{c,h}{,pp,xx},cc,hh,{c,le,sa}ss}]
+[*.{js,sh,json,md,{c,h}{,pp,xx},cc,hh,{c,le,sa}ss}]
 indent_style = space
 indent_size = 2
-[*.sh]
-indent_style = tab
-indent_size = 4
 
 # EOL
 [*.{sh,zsh,1,2,3}]
