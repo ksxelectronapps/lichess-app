@@ -4,6 +4,8 @@ quick-test
 test
 tmp
 temp
+tmp.*
+temp.*
 *.tmp
 *.temp
 *.sh

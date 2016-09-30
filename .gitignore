@@ -6,6 +6,8 @@ out
 quick-test
 tmp
 temp
+tmp.*
+temp.*
 *.tmp
 *.temp
 
