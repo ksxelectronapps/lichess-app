@@ -5,7 +5,7 @@ root = true
 insert_final_new_line = true
 
 # charset
-[*.{js,sh,json,yml,md,{c,h}{,pp,xx},cc,hh,{c,le,sa}ss}]
+[*.{js,sh,json,md,{c,h}{,pp,xx},cc,hh,{c,le,sa}ss,{x,y,ht}ml}]
 charset = utf-8
 
 # tab
@@ -20,5 +20,5 @@ end_of_line = lf
 end_of_line = crlf
 
 # Trailing White Space
-[*.{js,sh,json,yml,md,{c,h}{,pp,xx},cc,hh,{c,le,sa}ss}]
+[*.{js,sh,json,md,{c,h}{,pp,xx},cc,hh,{c,le,sa}ss,{x,y,ht}ml}]
 trim_trailing_whitespace = true
