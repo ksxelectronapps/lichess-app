@@ -19,7 +19,7 @@ cleandir () (
   do
     checkdir $dir && cleandir $dir
   done
-  echo Directory "$1"
+  echo Directory $(pwd)
   rm -rfv $($CLEANLIST)
 )
 
