@@ -14,11 +14,11 @@ checkdir () (
 )
 
 cleandir () (
-  for dir in $(ls -a $1)
+  cd $1
+  for dir in $(ls -a .)
   do
     checkdir $dir && cleandir $dir
   done
-  cd $1
   echo Directory "$1"
   rm -rfv $($CLEANLIST)
 )
