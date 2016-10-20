@@ -7,8 +7,8 @@
   },
   "scripts": {
     "remake-package-json": "node sh/remake-package-json",
-    "clean": "bash -c './sh/clean.sh'",
-    "fix": "bash -c './sh/fix.sh'",
-    "test": "bash -c './sh/test.sh'"
+    "clean": "bash 'sh/clean.sh'",
+    "fix": "bash 'sh/fix.sh'",
+    "test": "bash 'sh/test.sh'"
   }
 }
