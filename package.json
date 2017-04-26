@@ -18,6 +18,7 @@
     "test": "bash 'sh/test.sh'"
   },
   "build": {
+    "copyright": "Copyright © 2017 Hoàng Văn Khải",
     "mac": {
       "appId": "khai.app.electron.random",
       "categories": "public.app-category.utilities"
