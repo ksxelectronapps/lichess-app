@@ -10,6 +10,7 @@
     "remake-package-json": "node sh/remake-package-json",
     "clean": "bash 'sh/clean.sh'",
     "fix": "bash 'sh/fix.sh'",
+    "start": "bash 'sh/start.sh'",
     "test": "bash 'sh/test.sh'"
   }
 }
