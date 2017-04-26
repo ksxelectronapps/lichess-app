@@ -7,6 +7,7 @@ out
 out.*
 quick-test
 quick-test.*
+dist
 tmp
 temp
 tmp.*
