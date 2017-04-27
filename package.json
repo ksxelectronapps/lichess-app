@@ -3,7 +3,7 @@
   "main": "index.js",
   "author": "Hoàng Văn Khải <hvksmr1996@gmail.com>",
   "devDependencies": {
-    "standard": "8.0.0"
+    "standard": "10.0.2"
   },
   "scripts": {
     "remake-package-json": "node sh/remake-package-json",
