@@ -12,3 +12,8 @@ deploy:
   script: sh/deploy.sh
   on:
     tags: true
+
+addons:
+  apt:
+    packages:
+      - wine
