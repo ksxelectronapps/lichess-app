@@ -1,6 +1,6 @@
 {
   "name": "electron-packaging-attempt",
-  "version": "0.0.0",
+  "version": "0.0.2",
   "description": "Just an attempt",
   "main": "main.js",
   "author": "Hoàng Văn Khải <hvksmr1996@gmail.com>",
