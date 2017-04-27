@@ -7,9 +7,16 @@ node_js:
 before_script:
   - chmod -R +x sh
 
+before_deploy:
+  - OPTIONS="linux mac $OPTIONS" npm run pack
+
 deploy:
-  provider: script
-  script: sh/deploy.sh
+  provider: releases
+  api_key: $GITHUB_RELEASE_OAUTH
+  skip_cleanup: true
+  file_glob: true
+  file:
+    - dist/*
   on:
     tags: true
 
