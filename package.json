@@ -38,6 +38,10 @@
       ]
     },
     "mac": {
+      "target": [
+        "mas",
+        "7z"
+      ],
       "appId": "khai.app.electron.random",
       "categories": "public.app-category.utilities"
     }
