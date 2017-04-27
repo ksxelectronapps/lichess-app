@@ -12,3 +12,12 @@ deploy:
   script: sh/deploy.sh
   on:
     tags: true
+
+addons:
+  apt:
+    packages:
+      - icnsutils
+      - graphicsmagick
+      - xz-utils
+      - rpm # For RPM (Fedora)
+      - bsdtar # For pacman (Arch Linux)
