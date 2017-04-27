@@ -16,7 +16,12 @@ deploy:
   skip_cleanup: true
   file_glob: true
   file:
-    - dist/*
+    - dist/*.pacman
+    - dist/*.deb
+    - dist/*.rpm
+    - dist/*.AppImage
+    - dist/*.7z
+    - dist/mac/*.7z
   on:
     tags: true
 
