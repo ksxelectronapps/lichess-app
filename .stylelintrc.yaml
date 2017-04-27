@@ -1,0 +1,56 @@
+rules:
+  at-rule-blacklist: []
+  at-rule-empty-line-before: never
+  at-rule-name-case: lower
+  at-rule-name-newline-after: always-multi-line
+  at-rule-name-space-after: always-single-line
+  at-rule-no-unknown: false
+  at-rule-no-vendor-prefix: false
+  at-rule-semicolon-newline-after: always
+  at-rule-semicolon-space-before: never
+  at-rule-whitelist: []
+
+  block-opening-brace-space-after: always-single-line
+  block-closing-brace-space-before: always-single-line
+  block-no-empty: true
+
+  color-hex-case: lower
+  color-hex-length: long
+  color-no-invalid-hex: true
+
+  comment-no-empty: true
+  comment-whitespace-inside: always
+  comment-word-blacklist: []
+
+  declaration-block-no-duplicate-properties: true
+  declaration-block-no-redundant-longhand-properties: true
+  declaration-block-no-shorthand-property-overrides: true
+  declaration-block-semicolon-newline-after: always-multi-line
+  declaration-block-semicolon-space-after: always-single-line
+  declaration-block-single-line-max-declarations: 1
+  declaration-block-trailing-semicolon: always
+  declaration-colon-space-after: always
+  declaration-no-important: true
+
+  font-family-name-quotes: always-unless-keyword
+  indentation: 2
+  length-zero-no-unit: true
+
+  max-empty-lines: 1
+  max-line-length: 110
+
+  no-duplicate-selectors: true
+  no-eol-whitespace: true
+  no-extra-semicolons: true
+  no-missing-end-of-source-newline: true
+
+  number-no-trailing-zeros: true
+  property-case: lower
+  rule-empty-line-before: always-multi-line
+
+  value-keyword-case: lower
+  value-list-comma-newline-before: never
+  value-list-comma-newline-after: always-multi-line
+  value-list-comma-space-before: never
+  value-list-comma-space-after: always-single-line
+  value-list-max-empty-lines: 1
