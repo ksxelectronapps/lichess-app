@@ -4,8 +4,6 @@ rules:
   at-rule-name-case: lower
   at-rule-name-newline-after: always-multi-line
   at-rule-name-space-after: always-single-line
-  at-rule-no-unknown: false
-  at-rule-no-vendor-prefix: false
   at-rule-semicolon-newline-after: always
   at-rule-semicolon-space-before: never
   at-rule-whitelist: []
@@ -49,8 +47,8 @@ rules:
   rule-empty-line-before: always-multi-line
 
   value-keyword-case: lower
-  value-list-comma-newline-before: never
+  value-list-comma-newline-before: never-multi-line
   value-list-comma-newline-after: always-multi-line
-  value-list-comma-space-before: never
+  value-list-comma-space-before: never-single-line
   value-list-comma-space-after: always-single-line
   value-list-max-empty-lines: 1
