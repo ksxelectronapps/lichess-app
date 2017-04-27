@@ -1,6 +1,6 @@
 #! /usr/bin/env bash
 export GH_TOKEN=$GITHUB_RELEASE_OAUTH
-export OPTIONS="publish=onTagOrDraft linux mac win $OPTIONS"
+export OPTIONS="publish=onTagOrDraft linux mac $OPTIONS"
 
 if [[ -z $GH_TOKEN ]]
   then
