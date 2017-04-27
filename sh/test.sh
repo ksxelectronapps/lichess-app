@@ -1,6 +1,6 @@
 (
   printf "Checking Code Style... "
-  standard > stdout.tmp 2> stderr.tmp && (
+  bash ./sh/lint.sh > stdout.tmp 2> stderr.tmp && (
     echo "passed"
   ) || (
     echo "failed" >&2

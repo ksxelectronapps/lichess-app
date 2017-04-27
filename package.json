@@ -6,9 +6,13 @@
     "electron": "^1.6.6",
     "electron-builder": "^8.6.0",
     "electron-builder-squirrel-windows": "^17.0.1",
+    "js-yaml": "^3.8.3",
+    "htmllint-cli": "^0.0.6",
+    "stylelint": "^7.10.1",
     "standard": "^10.0.2"
   },
   "scripts": {
+    "lint": "bash sh/lint.sh",
     "build": "bash sh/build.sh",
     "pack": "bash sh/pack.sh",
     "remake-package-json": "node sh/remake-package-json",

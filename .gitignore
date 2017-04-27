@@ -16,6 +16,10 @@ temp.*
 *.temp
 *.tern-project
 *.tern-project.json
+*.htmllintrc
+*.htmllintrc.json
+*.stylelintrc
+*.stylelintrc.json
 
 # Logs
 logs
