@@ -9,6 +9,9 @@ temp.*
 *.tmp
 *.temp
 *.sh
+*.tern-project*
+*.editorconfig*
+*.eslintrc*
 .git*
 /.travis.yml
 /appveyor.yml
