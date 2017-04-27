@@ -1,3 +1,4 @@
+#! /usr/bin/env bash
 export GH_TOKEN=$GITHUB_RELEASE_OAUTH
 export OPTIONS="publish linux mac win $OPTIONS"
 

@@ -9,6 +9,6 @@ before_script:
 
 deploy:
   provider: script
-  script: npm run deploy
+  script: sh/deploy.sh
   on:
     tags: true
