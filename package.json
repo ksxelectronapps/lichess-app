@@ -13,7 +13,7 @@
   },
   "scripts": {
     "lint": "bash sh/lint.sh",
-    "build": "bash sh/build.sh",
+    "dist": "bash sh/dist.sh",
     "pack": "bash sh/pack.sh",
     "remake-package-json": "node sh/remake-package-json",
     "clean": "bash 'sh/clean.sh'",
