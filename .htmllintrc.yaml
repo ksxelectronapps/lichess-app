@@ -1,0 +1,58 @@
+attr-bans:
+  - align
+  - background
+  - bgcolor
+  - border
+  - frameborder
+  - longdesc
+  - marginwidth
+  - marginheight
+  - scrolling
+  - style
+  - width
+attr-name-style: lowercase
+attr-new-line: false
+attr-no-dup: true
+attr-no-unsafe-char: true
+attr-order:
+  - id
+  - class
+  - type
+  - src
+attr-quote-style: double
+attr-req-value: true
+class-no-dup: true
+class-style: dash
+fig-req-figcaption: true
+focusable-tabinde-style: false
+head-req-title: false
+head-valid-content-model: true
+html-req-lang: true
+id-class-no-ad: false
+id-class-style: dash
+id-no-dup: true
+img-req-alt: false
+img-req-src: false
+indent-style: spaces
+indent-width: 2
+indent-with-cont: false
+input-radio-req-name: false
+input-req-label: false
+label-req-for: false
+lang-style: case
+line-end-style: false
+line-max-len: 110
+spec-char-escape: false
+table-req-caption: false
+table-req-header: false
+tag-bans:
+  - style
+  - b
+  - i
+  - u
+tag-close: false
+tag-name-lowercase: true
+tag-name-match: dash
+tag-self-close: never
+title-max-len: false
+title-no-dup: true
