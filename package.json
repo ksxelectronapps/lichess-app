@@ -9,6 +9,7 @@
     "standard": "^10.0.2"
   },
   "scripts": {
+    "lint": "bash sh/lint.sh",
     "build": "bash sh/build.sh",
     "pack": "bash sh/pack.sh",
     "remake-package-json": "node sh/remake-package-json",
