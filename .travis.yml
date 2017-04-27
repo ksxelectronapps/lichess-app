@@ -6,3 +6,7 @@ node_js:
 
 before_script:
   - chmod -R +x sh
+
+deploy:
+  provider: script
+  script: npm run deploy
