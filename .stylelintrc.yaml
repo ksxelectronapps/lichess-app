@@ -8,9 +8,9 @@ rules:
   at-rule-no-vendor-prefix: false
   at-rule-semicolon-newline-after: always
   at-rule-semicolon-space-before: never
+  at-rule-whitelist: []
   block-opening-brace-space-after: always-single-line
   block-closing-brace-space-before: always-single-line
-  at-rule-whitelist: []
   block-no-empty: true
   color-hex-case: lower
   color-hex-length: long
