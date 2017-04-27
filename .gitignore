@@ -13,6 +13,8 @@ tmp.*
 temp.*
 *.tmp
 *.temp
+*.tern-project
+*.tern-project.json
 
 # Logs
 logs
