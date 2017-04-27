@@ -28,7 +28,8 @@
         "AppImage",
         "pacman",
         "deb",
-        "rpm"
+        "rpm",
+        "7z"
       ]
     },
     "win": {
