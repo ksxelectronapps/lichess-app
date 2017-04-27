@@ -13,7 +13,7 @@ rules:
   block-opening-brace-space-after: always-single-line
   block-closing-brace-space-before: always-single-line
   block-no-empty: true
-  
+
   color-hex-case: lower
   color-hex-length: long
   color-no-invalid-hex: true
