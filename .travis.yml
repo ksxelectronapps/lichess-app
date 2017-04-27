@@ -10,3 +10,5 @@ before_script:
 deploy:
   provider: script
   script: npm run deploy
+  on:
+    tags: true
