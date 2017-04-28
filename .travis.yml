@@ -14,8 +14,7 @@ before_script:
 before_deploy:
   - bash addons/main.sh
   - OPTIONS="linux mac win $OPTIONS" npm run pack
-  - npm run dist-rename
-  - ls dist/{,mac,win} || true
+  - ls dist/{,linux,mac,win} || true
 
 deploy:
   provider: releases
