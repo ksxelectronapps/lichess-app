@@ -22,16 +22,16 @@ deploy:
   skip_cleanup: true
   file_glob: true
   file:
-    - dist/*.pacman
-    - dist/*.deb
-    - dist/*.rpm
-    - dist/*.AppImage
-    - dist/*.zip
-    - dist/*.7z
-    - dist/mac/*.zip
-    - dist/mac/*.7z
-    - dist/win/*.exe
-    - dist/win/*.zip
-    - dist/win/*.7z
+    - '"dist/*.pacman"'
+    - '"dist/*.deb"'
+    - '"dist/*.rpm"'
+    - '"dist/*.AppImage"'
+    - '"dist/*.zip"'
+    - '"dist/*.7z"'
+    - '"dist/mac/*.zip"'
+    - '"dist/mac/*.7z"'
+    - '"dist/win/*.exe"'
+    - '"dist/win/*.zip"'
+    - '"dist/win/*.7z"'
   on:
     tags: true
