@@ -1,6 +1,8 @@
 
 language: node_js
 
+sudo: required
+
 node_js:
   - '6'
 
@@ -8,6 +10,7 @@ before_script:
   - chmod -R +x sh
 
 before_deploy:
+  - bash addons/main.sh
   - OPTIONS="linux mac $OPTIONS" npm run pack
 
 deploy:
@@ -20,16 +23,12 @@ deploy:
     - dist/*.deb
     - dist/*.rpm
     - dist/*.AppImage
+    - dist/*.zip
     - dist/*.7z
+    - dist/mac/*.zip
     - dist/mac/*.7z
+    - dist/win/*.exe
+    - dist/win/*.zip
+    - dist/win/*.7z
   on:
     tags: true
-
-addons:
-  apt:
-    packages:
-      - icnsutils
-      - graphicsmagick
-      - xz-utils
-      - rpm # For RPM (Fedora)
-      - bsdtar # For pacman (Arch Linux)
