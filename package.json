@@ -22,6 +22,7 @@
     "test": "bash 'sh/test.sh'"
   },
   "build": {
+    "appId": "app.electron.demo",
     "copyright": "Copyright © 2017 Hoàng Văn Khải",
     "linux": {
       "target": [
@@ -29,21 +30,23 @@
         "pacman",
         "deb",
         "rpm",
+        "zip",
         "7z"
       ]
     },
     "win": {
       "target": [
         "nsis",
+        "zip",
         "7z"
       ]
     },
     "mac": {
       "target": [
         "mas",
+        "zip",
         "7z"
       ],
-      "appId": "khai.app.electron.random",
       "categories": "public.app-category.utilities"
     }
   }

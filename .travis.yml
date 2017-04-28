@@ -1,6 +1,10 @@
 
 language: node_js
 
+dist: xenial
+
+sudo: required
+
 node_js:
   - '6'
 
@@ -8,16 +12,31 @@ before_script:
   - chmod -R +x sh
 
 before_deploy:
-  - source ./sh/deploy/before.sh
+  - bash addons/main.sh
+  - OPTIONS="linux mac win $OPTIONS" npm run pack
+  - ls dist/{,linux,mac,win} || true
 
 deploy:
   provider: releases
   api_key: $GITHUB_RELEASE_OAUTH
   skip_cleanup: true
   file_glob: true
-  file: $(./sh/deploy/file.sh)
+  file:
+    - dist/*.pacman
+    - dist/*.deb
+    - dist/*.rpm
+    - dist/*.AppImage
+    - dist/*.exe
+    - dist/*.zip
+    - dist/*.7z
+    - dist/linux/*.pacman
+    - dist/linux/*.deb
+    - dist/linux/*.rpm
+    - dist/linux/*.AppImage
+    - dist/mac/*.zip
+    - dist/mac/*.7z
+    - dist/win/*.exe
+    - dist/win/*.zip
+    - dist/win/*.7z
   on:
     tags: true
-
-after_deploy:
-  - source ./sh/deploy/after.sh

@@ -1,0 +1,5 @@
+icnsutils
+graphicsmagick
+xz-utils
+rpm
+bsdtar
