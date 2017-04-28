@@ -1,2 +1,2 @@
-bash pkgs.sh
-bash ppas.sh
+bash addons/pkgs.sh
+bash addons/ppas.sh
