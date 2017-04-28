@@ -22,7 +22,6 @@
     "test": "bash 'sh/test.sh'"
   },
   "build": {
-    "appId": "khai.app.electron.random",
     "copyright": "Copyright © 2017 Hoàng Văn Khải",
     "linux": {
       "target": [
