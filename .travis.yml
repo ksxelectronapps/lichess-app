@@ -14,6 +14,7 @@ before_script:
 before_deploy:
   - bash addons/main.sh
   - OPTIONS="linux mac win $OPTIONS" npm run pack
+  - ls dist/{,mac,win} || true
 
 deploy:
   provider: releases
