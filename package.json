@@ -12,6 +12,7 @@
     "standard": "^10.0.2"
   },
   "scripts": {
+    "dist-rename": "bash sh/dist-rename.sh",
     "lint": "bash sh/lint.sh",
     "dist": "bash sh/dist.sh",
     "pack": "bash sh/pack.sh",
