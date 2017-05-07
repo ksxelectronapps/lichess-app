@@ -61,7 +61,7 @@ Create distributable packages (files)
 OPTIONS='linux macos windows' npm run pack # If success, open 'dist' folder to see the result
 ```
 
-#### Clean the mess
+### Clean the mess
 
 Remove all "gitignored" files/folders (dist, \*.tmp, \*.log, etc.)
 
