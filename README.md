@@ -13,6 +13,10 @@ A desktop client for lichess.org
 - [ ] Handle notifications
 - [ ] Upload to AUR
 
+## Download
+
+Go to [GitHub Release page](https://git.io/v9wH6)
+
 ## License
 
 [MIT](./LICENSE.md)
