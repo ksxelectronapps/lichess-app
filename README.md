@@ -10,6 +10,7 @@ A desktop client for lichess.org
 - [ ] Lichess icon
 - [ ] Tray icon
 - [ ] Customize menu bar
+- [ ] Handle notifications
 - [ ] Upload to AUR
 
 ## License
