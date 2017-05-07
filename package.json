@@ -22,7 +22,7 @@
     "test": "bash 'sh/test.sh'"
   },
   "build": {
-    "appId": "app.electron.demo",
+    "appId": "com.khai.lichess",
     "copyright": "Copyright © 2017 Hoàng Văn Khải",
     "linux": {
       "target": [
