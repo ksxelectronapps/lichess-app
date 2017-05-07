@@ -14,6 +14,7 @@ Go to [GitHub Release page](https://git.io/v9wH6)
 - [ ] Lichess icon
 - [ ] Tray icon
 - [ ] Customize menu bar
+- [ ] Cache Credentials
 - [ ] Handle notifications
 - [ ] Upload to AUR
 
