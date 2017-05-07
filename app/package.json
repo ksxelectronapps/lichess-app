@@ -1,6 +1,6 @@
 {
   "name": "lichess-app",
-  "version": "0.0.0",
+  "version": "0.0.0-alpha",
   "description": "A desktop client for lichess.org",
   "main": "main.js",
   "author": "Hoàng Văn Khải <hvksmr1996@gmail.com>",
