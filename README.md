@@ -69,6 +69,12 @@ Remove all "gitignored" files/folders (dist, \*.tmp, \*.log, etc.)
 npm run clean
 ```
 
+## Contributing
+
+This project use Feross's JavaScript code standard
+
+[![JavaScript Style Guide](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
+
 ## Download
 
 Go to [GitHub Release page](https://git.io/v9wH6)
