@@ -75,7 +75,7 @@ npm run clean
 
 ## Contributing
 
-This project use Feross's JavaScript code standard
+This project uses Feross's JavaScript code standard
 
 [![JavaScript Style Guide](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
 
