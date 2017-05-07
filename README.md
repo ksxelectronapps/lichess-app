@@ -23,7 +23,7 @@ Go to [GitHub Release page](https://git.io/v9wH6)
 
 * NodeJS ≥ 6.0.0, and npm (mandatory)
 * BASH environment (mandatory)
-* UNIX-like environment (optional, recommend)
+* UNIX-like environment (optional, recommended)
 
 ### Preparation
 
