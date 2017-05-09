@@ -14,6 +14,7 @@ Go to [GitHub Release page](https://git.io/v9wH6)
 - [ ] Lichess icon
 - [ ] Tray icon
 - [ ] Customize menu bar
+- [ ] Webcontent proxy
 - [ ] Create 404 page
 - [ ] Cache Credentials
 - [ ] Handle notifications
