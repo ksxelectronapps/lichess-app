@@ -2,6 +2,7 @@
 const {app, BrowserWindow} = require('electron')
 const {platform} = require('process')
 const {icon} = require('./lib/platform.js')
+const tray = require('./lib/tray.js')
 let mainWindow
 
 function createWindow () {
@@ -11,5 +12,7 @@ function createWindow () {
 }
 
 app.on('ready', createWindow)
+app.on('ready', tray.addTrayIcon)
 app.on('window-all-closed', () => platform === 'darwin' || app.quit())
 app.on('activate', () => mainWindow || createWindow())
+tray.enableTrayIpc()
