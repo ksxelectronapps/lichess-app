@@ -16,7 +16,7 @@ const closeMainWindow = () =>
   mainWindow && mainWindow.close()
 
 const toggleMainWindow = () =>
-  mainWindow ? openMainWindow() : closeMainWindow()
+  mainWindow ? closeMainWindow() : openMainWindow()
 
 const getWindowCount = () =>
   BrowserWindow.getAllWindows().length
