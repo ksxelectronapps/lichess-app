@@ -4,7 +4,7 @@
   "author": "Hoàng Văn Khải <hvksmr1996@gmail.com>",
   "devDependencies": {
     "electron": "^1.6.6",
-    "electron-builder": "^8.6.0",
+    "electron-builder": "^17.3.1",
     "electron-builder-squirrel-windows": "^17.0.1",
     "js-yaml": "^3.8.3",
     "htmllint-cli": "^0.0.6",
@@ -25,6 +25,7 @@
     "appId": "com.khai.lichess",
     "copyright": "Copyright © 2017 Hoàng Văn Khải",
     "linux": {
+      "icon": "app/icon/linux",
       "target": [
         "AppImage",
         "pacman",
@@ -35,6 +36,7 @@
       ]
     },
     "win": {
+      "icon": "app/icon/windows.ico",
       "target": [
         "nsis",
         "zip",
@@ -42,6 +44,7 @@
       ]
     },
     "mac": {
+      "icon": "app/icon/macos.icns",
       "target": [
         "mas",
         "zip",
