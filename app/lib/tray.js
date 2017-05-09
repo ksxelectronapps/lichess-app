@@ -1,6 +1,6 @@
 'use strict'
 const {Tray, ipcMain} = require('electron')
-const {icon} = require('./platform.js')
+const {icon} = require('./platform-specific.js')
 const buildTrayMenu = require('./tray-menu')
 let tray = null
 

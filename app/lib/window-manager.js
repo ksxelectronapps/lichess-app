@@ -1,6 +1,6 @@
 'use strict'
 const {BrowserWindow} = require('electron')
-const {icon} = require('./platform.js')
+const {icon} = require('./platform-specific.js')
 let mainWindow = null
 
 const getMainWindow = () => mainWindow
