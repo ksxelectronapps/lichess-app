@@ -2,6 +2,7 @@
 const {Tray, ipcMain} = require('electron')
 const {icon} = require('./platform-specific.js')
 const buildTrayMenu = require('./tray-menu')
+const checkAppQuit = require('./check-app-quit.js')
 let tray = null
 
 const addTrayIcon = () => {
@@ -13,6 +14,7 @@ const addTrayIcon = () => {
 const removeTrayIcon = () => {
   tray.destroy()
   tray = null
+  checkAppQuit()
 }
 
 const toggleTrayIcon = () =>
