@@ -47,7 +47,7 @@
         "zip",
         "7z"
       ],
-      "categories": "public.app-category.utilities"
+      "category": "public.app-category.board-games"
     }
   }
 }
