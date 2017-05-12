@@ -29,3 +29,11 @@ test_script:
 
 build_script:
   - cmd: npm run pack
+
+deploy:
+  - provider: GitHub
+    artifact: C:\Projects\Main\dist\*
+    draft: false
+    prerelease: false
+    on:
+      appveyor_repo_tag: true
