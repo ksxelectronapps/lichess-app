@@ -30,9 +30,11 @@ test_script:
 build_script:
   - cmd: npm run pack
 
+artifacts:
+  - path: C:\Projects\Main\dist\*.*
+
 deploy:
   - provider: GitHub
-    artifact: C:\Projects\Main\dist\*
     draft: false
     prerelease: false
     on:
