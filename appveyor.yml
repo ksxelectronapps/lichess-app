@@ -31,8 +31,8 @@ build_script:
   - cmd: npm run pack
 
 artifacts:
-  - path: C:\Projects\Main\dist\*.*
-  - path: C:\Projects\Main\dist\win\*.*
+  - path: dist\*.*
+  - path: dist\win\*.*
 
 deploy:
   - provider: GitHub
