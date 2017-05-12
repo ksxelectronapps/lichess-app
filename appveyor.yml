@@ -38,5 +38,6 @@ deploy:
   - provider: GitHub
     draft: false
     prerelease: false
+    auth_token: $(GITHUB_RELEASE_OAUTH)
     on:
       appveyor_repo_tag: true
