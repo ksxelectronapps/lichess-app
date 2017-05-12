@@ -24,7 +24,6 @@ deploy:
   file:
     - dist/*.*
     - dist/linux/*.*
-    - dist/mac/*.*
     - dist/win/*.*
   on:
     tags: true
