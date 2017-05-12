@@ -1,0 +1,39 @@
+branches:
+  except:
+    - gh-pages
+
+environment:
+  matrix:
+    - nodejs_version: 6
+    - nodejs_version: 7
+
+image: Visual Studio 2015
+
+clone_folder: C:\Projects\Main
+
+clone_depth: 1
+
+install:
+  - cmd: echo "Repo URL" && git remote get-url origin
+  - ps: Install-Product node $env:nodejs_version
+  - cmd: IF %nodejs_version% EQU 0.8 npm -g install npm@2
+  - cmd: IF %nodejs_version% EQU 0.8 set PATH=%APPDATA%\npm;%PATH%
+  - cmd: npm -g install npm
+  - cmd: IF %nodejs_version% NEQ 0.8 set PATH=%APPDATA%\npm;%PATH%
+  - cmd: npm install
+
+test_script:
+  - cmd: echo "NodeJS version" && node --version
+  - cmd: echo "NPM version" && npm --version
+  - cmd: echo "Test" && npm test
+
+build_script:
+  - cmd: npm run pack
+
+deploy:
+  - provider: GitHub
+    artifact: C:\Projects\Main\dist\*
+    draft: false
+    prerelease: false
+    on:
+      appveyor_repo_tag: true
