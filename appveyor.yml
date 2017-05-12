@@ -32,6 +32,7 @@ build_script:
 
 artifacts:
   - path: C:\Projects\Main\dist\*.*
+  - path: C:\Projects\Main\dist\win\*.*
 
 deploy:
   - provider: GitHub
