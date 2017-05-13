@@ -28,7 +28,7 @@ test_script:
   - cmd: echo "Test" && npm test
 
 build_script:
-  - cmd: npm run pack
+  - cmd: bash -c 'OPTIONS="windows ia32 x64 $OPTIONS" npm run pack'
   - cmd: dir
   - cmd: tree dist
 
