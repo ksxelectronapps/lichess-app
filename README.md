@@ -16,7 +16,7 @@ Go to [GitHub Release page](https://git.io/v9wH6)
 ## To Do
 
 - [x] Lichess icon
-- [ ] Tray icon
+- [x] Tray icon
 - [ ] Customize menu bar
 - [ ] Webcontent proxy
 - [ ] Background page
