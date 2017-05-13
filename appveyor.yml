@@ -3,6 +3,7 @@ branches:
     - gh-pages
 
 environment:
+  OPTIONS: 'windows ia32 x64'
   matrix:
     - nodejs_version: 7
 
@@ -28,7 +29,7 @@ test_script:
   - cmd: echo "Test" && npm test
 
 build_script:
-  - cmd: bash -c 'OPTIONS="windows ia32 x64 $OPTIONS" npm run pack'
+  - cmd: npm run pack
   - cmd: dir
   - cmd: dir dist
   - cmd: tree dist
