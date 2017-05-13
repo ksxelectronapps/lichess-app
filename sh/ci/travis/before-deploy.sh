@@ -1,4 +1,7 @@
-[[ $APPVEYOR_REPO_TAG != 'true' && -z $TRAVIS_TAG ]] && exit 0
+[[ $APPVEYOR_REPO_TAG != 'true' && -z $TRAVIS_TAG ]] && {
+  echo ':: Not at a tag, skipping...'
+  exit 0
+}
 
 (
   echo '-- Installing addons...'
