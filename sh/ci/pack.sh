@@ -1,3 +1,5 @@
+[[ $APPVEYOR_REPO_TAG != 'true' && -z $TRAVIS_TAG ]] && exit 0
+
 (
   echo '-- Installing addons...'
   bash addons/main.sh
