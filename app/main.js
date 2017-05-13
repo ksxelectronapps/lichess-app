@@ -1,22 +1,10 @@
 'use strict'
-const {app, BrowserWindow} = require('electron')
-const url = require('url')
-const path = require('path')
-const {platform} = require('process')
-let mainWindow
+const {app} = require('electron')
+const {openMainWindow} = require('./lib/window-manager.js')
+const tray = require('./lib/tray.js')
 
-function createWindow () {
-  mainWindow = new BrowserWindow()
-  mainWindow.loadURL(
-    url.format({
-      pathname: path.join(__dirname, 'page', 'index.html'),
-      protocol: 'file:',
-      slashes: true
-    })
-  )
-  mainWindow.on('closed', () => { mainWindow = null })
-}
-
-app.on('ready', createWindow)
-app.on('window-all-closed', () => platform === 'darwin' || app.quit())
-app.on('activate', () => mainWindow || createWindow())
+app.on('ready', openMainWindow)
+app.on('ready', tray.addTrayIcon)
+app.on('activate', openMainWindow)
+app.on('window-all-closed', require('./lib/check-app-quit.js'))
+tray.enableTrayIpc()
