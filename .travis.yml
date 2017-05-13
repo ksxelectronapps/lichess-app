@@ -9,7 +9,7 @@ node_js:
   - '6'
 
 env:
-  - BEFORE_DEPLOY_SCRIPT='bash sh/ci/pack.sh'
+  - BEFORE_DEPLOY_SCRIPT='bash sh/ci/travis/before-deploy.sh'
 
 jobs:
   include:
