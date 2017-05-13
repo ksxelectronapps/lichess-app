@@ -29,6 +29,7 @@ test_script:
 
 build_script:
   - cmd: npm run pack
+  - cmd: dir
   - cmd: tree dist
 
 artifacts:
