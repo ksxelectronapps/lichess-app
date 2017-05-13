@@ -3,7 +3,7 @@ branches:
     - gh-pages
 
 environment:
-  OPTIONS: 'windows ia32 x64 armv7l'
+  OPTIONS: 'windows ia32 x64'
   matrix:
     - nodejs_version: 7
 
