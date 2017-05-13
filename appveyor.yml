@@ -3,6 +3,7 @@ branches:
     - gh-pages
 
 environment:
+  OPTIONS: 'windows ia32 x64'
   matrix:
     - nodejs_version: 7
 
@@ -14,6 +15,7 @@ clone_depth: 1
 
 install:
   - cmd: echo "Repo URL" && git remote get-url origin
+  - cmd: dir
   - ps: Install-Product node $env:nodejs_version
   - cmd: IF %nodejs_version% EQU 0.8 npm -g install npm@2
   - cmd: IF %nodejs_version% EQU 0.8 set PATH=%APPDATA%\npm;%PATH%
@@ -28,6 +30,7 @@ test_script:
 
 build_script:
   - cmd: npm run pack
+  - cmd: dir
 
 artifacts:
   - path: dist\*.*
@@ -37,5 +40,6 @@ deploy:
   - provider: GitHub
     draft: false
     prerelease: false
+    auth_token: $(GITHUB_RELEASE_OAUTH)
     on:
       appveyor_repo_tag: true
