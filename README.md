@@ -1,7 +1,7 @@
 # lichess-app
 
-[![Build Status](https://travis-ci.org/ksxelectronapps/lichess-app.svg?branch=master)](https://travis-ci.org/ksxelectronapps/lichess-app)
-[![Build Status]](https://ci.appveyor.com/api/projects/status/rfiq9s0w8l1f9poh?svg=true)
+[![Travis Build Status](https://travis-ci.org/ksxelectronapps/lichess-app.svg?branch=master)](https://travis-ci.org/ksxelectronapps/lichess-app)
+[![AppVeyor Build Status]](https://ci.appveyor.com/api/projects/status/rfiq9s0w8l1f9poh?svg=true)
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 A desktop client for [lichess.org](https://lichess.org)
