@@ -31,7 +31,7 @@ test_script:
   - cmd: echo "NPM version" && npm --version
   - cmd: echo "Test" && npm test
 
-build_script:
+before_deploy:
   - cmd: |
       set OPTIONS="%TARGET_OS% %TARGET_ARCH% %OPTIONS%"
       npm run pack
