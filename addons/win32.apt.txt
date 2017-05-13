@@ -1,3 +1,0 @@
-wine1.8
-mono-devel
-ca-certificates-mono
