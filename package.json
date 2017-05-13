@@ -36,6 +36,7 @@
     },
     "win": {
       "target": [
+        "squirrel",
         "nsis",
         "zip",
         "7z"
