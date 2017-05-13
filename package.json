@@ -38,6 +38,7 @@
     "win": {
       "icon": "app/icon/windows.ico",
       "target": [
+        "squirrel",
         "nsis",
         "zip",
         "7z"
