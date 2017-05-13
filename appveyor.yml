@@ -32,7 +32,9 @@ test_script:
   - cmd: echo "Test" && npm test
 
 build_script:
-  - cmd: npm run pack
+  - cmd: |
+      set OPTIONS="%TARGET_OS% %TARGET_ARCH% %OPTIONS%"
+      npm run pack
   - cmd: dir
 
 artifacts:
