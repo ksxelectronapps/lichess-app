@@ -31,8 +31,7 @@ test_script:
 build_script:
   - cmd: npm run pack
   - cmd: dir
-  - cmd: dir dist
-  - cmd: tree dist
+  - cmd: tree /f /a dist
 
 artifacts:
   - path: dist\*.*
