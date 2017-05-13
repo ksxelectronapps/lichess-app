@@ -13,8 +13,8 @@ before_script:
 
 before_deploy:
   - bash addons/main.sh
-  - OPTIONS="linux mac win $OPTIONS" npm run pack
-  - ls dist/{,linux,mac,win} || true
+  - OPTIONS="linux mac $OPTIONS" npm run pack
+  - ls dist/{,linux,mac} || true
 
 deploy:
   provider: releases
@@ -22,21 +22,10 @@ deploy:
   skip_cleanup: true
   file_glob: true
   file:
-    - dist/*.pacman
-    - dist/*.deb
-    - dist/*.rpm
-    - dist/*.AppImage
-    - dist/*.exe
-    - dist/*.zip
-    - dist/*.7z
-    - dist/linux/*.pacman
-    - dist/linux/*.deb
-    - dist/linux/*.rpm
-    - dist/linux/*.AppImage
-    - dist/mac/*.zip
+    - dist/*.*
+    - dist/linux/*.*
     - dist/mac/*.7z
-    - dist/win/*.exe
-    - dist/win/*.zip
-    - dist/win/*.7z
+    - dist/mac/*.zip
+    - dist/win/*.*
   on:
     tags: true
