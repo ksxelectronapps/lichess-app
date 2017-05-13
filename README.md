@@ -15,9 +15,10 @@ Go to [GitHub Release page](https://git.io/v9wH6)
 
 ## To Do
 
-- [ ] Lichess icon
-- [ ] Tray icon
+- [x] Lichess icon
+- [x] Tray icon
 - [ ] Customize menu bar
+- [ ] Webcontent proxy
 - [ ] Background page
 - [ ] Create 404 page
 - [ ] Cache Credentials
@@ -30,7 +31,7 @@ Go to [GitHub Release page](https://git.io/v9wH6)
 
 * NodeJS ≥ 6.0.0, and npm (mandatory)
 * BASH environment (mandatory)
-* UNIX-like environment (optional, recommend)
+* UNIX-like environment (optional, recommended)
 
 ### Preparation
 
@@ -82,7 +83,7 @@ npm run clean
 
 ## Contributing
 
-This project use Feross's JavaScript code standard
+This project uses Feross's JavaScript code standard
 
 [![JavaScript Style Guide](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
 

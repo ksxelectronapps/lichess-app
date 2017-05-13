@@ -2,6 +2,8 @@
 *.log
 quick-test
 test
+docs
+addons
 tmp
 temp
 tmp.*
@@ -9,9 +11,11 @@ temp.*
 *.tmp
 *.temp
 *.sh
+*.tern-project*
+*.editorconfig*
+*.eslintrc*
 .git*
 /.travis.yml
 /appveyor.yml
 /circle.yml
 /sh
-docs
