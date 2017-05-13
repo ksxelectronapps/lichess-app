@@ -30,6 +30,7 @@ test_script:
 build_script:
   - cmd: bash -c 'OPTIONS="windows ia32 x64 $OPTIONS" npm run pack'
   - cmd: dir
+  - cmd: dir dist
   - cmd: tree dist
 
 artifacts:
