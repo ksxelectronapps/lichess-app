@@ -13,13 +13,13 @@ env:
 
 jobs:
   include:
-    - stage: before_script
+    - stage: before_deploy
       script: TARGET_OS=linux TARGET_ARCH=ia32 exec $BEFORE_DEPLOY_SCRIPT
-    - stage: before_script
+    - stage: before_deploy
       script: TARGET_OS=linux TARGET_ARCH=x64 exec $BEFORE_DEPLOY_SCRIPT
-    - stage: before_script
+    - stage: before_deploy
       script: TARGET_OS=linux TARGET_ARCH=armv7l exec $BEFORE_DEPLOY_SCRIPT
-    - stage: before_script
+    - stage: before_deploy
       script: TARGET_OS=mac exec $BEFORE_DEPLOY_SCRIPT
 
 before_script:
