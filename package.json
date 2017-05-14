@@ -26,6 +26,7 @@
     "copyright": "Copyright © 2017 Hoàng Văn Khải",
     "linux": {
       "target": [
+        "freebsd",
         "AppImage",
         "pacman",
         "deb",
