@@ -12,6 +12,6 @@
   true
 ) || (
   status=$?
-  echo "Execution of command '$*' failed." >&2
+  echo "Execution of command '$0 $@' failed." >&2
   exit $status
 )
