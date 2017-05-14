@@ -4,6 +4,15 @@ language: node_js
 node_js:
   - '6'
 
+cache:
+  directories:
+    - $HOME/.npm
+    - $HOME/.nvm
+    - $HOME/.node-gyp
+    - $HOME/.node_libraries
+    - $HOME/node_modules
+    - node_modules
+
 before_script:
   - chmod -R +x sh
 
