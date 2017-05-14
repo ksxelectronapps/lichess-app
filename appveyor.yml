@@ -32,9 +32,6 @@ test_script:
   - cmd: echo "Test" && npm test
 
 build_script:
-  - cmd: echo "Skipping..."
-
-build_script:
   - cmd: bash sh/ci/appveyor/build.sh
   - cmd: dir
 
