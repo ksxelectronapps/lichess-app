@@ -1,3 +1,9 @@
+[[ $SKIP_LINT == 'true' ]] && {
+  echo "Environment variable SKIP_LINT is true."
+  echo "Skipping lint..."
+  exit 0
+}
+
 wdir="$(pwd)"
 
 (
