@@ -27,6 +27,7 @@
     "linux": {
       "icon": "app/icon/linux",
       "target": [
+        "freebsd",
         "AppImage",
         "pacman",
         "deb",

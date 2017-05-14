@@ -17,8 +17,22 @@ env:
     TARGET_ARCH=armv7l
   - TARGET_OS=mac
 
+cache:
+  yarn: true
+  directories:
+    - $HOME/.npm
+    - $HOME/.nvm
+    - $HOME/.node-gyp
+    - $HOME/.node_libraries
+    - $HOME/node_modules
+    - node_modules
+
+install:
+  - yarn install
+
 before_script:
   - chmod -R +x sh
+  - export ALTER_NPM=yarn
 
 before_deploy:
   - bash sh/ci/travis/before-deploy.sh
