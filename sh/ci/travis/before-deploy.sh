@@ -5,7 +5,7 @@
   echo '-- Creating packages...'
   export OPTIONS="publish=never $TARGET_OS $TARGET_ARCH $OPTIONS"
   export SKIP_NPM_TEST='true'
-  npm run pack
+  yarn run pack
 ) && (
   echo '-- Listing artifacts...'
   ls dist/{,linux,mac,win}

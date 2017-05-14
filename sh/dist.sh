@@ -1,1 +1,1 @@
-OPTIONS="dir $OPTIONS" npm run pack
+OPTIONS="dir $OPTIONS" yarn run pack
