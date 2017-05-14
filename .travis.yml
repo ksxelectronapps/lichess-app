@@ -9,18 +9,16 @@ node_js:
   - '6'
 
 env:
-  - BEFORE_DEPLOY_SCRIPT='bash sh/ci/travis/before-deploy.sh'
+  - TARGET_OS=linux
+    TARGET_ARCH=ia32
+  - TARGET_OS=linux
+    TARGET_ARCH=x64
+  - TARGET_OS=linux
+    TARGET_ARCH=armv7l
+  - TARGET_OS=mac
 
-jobs:
-  include:
-    - stage: before_deploy
-      script: TARGET_OS=linux TARGET_ARCH=ia32 exec $BEFORE_DEPLOY_SCRIPT
-    - stage: before_deploy
-      script: TARGET_OS=linux TARGET_ARCH=x64 exec $BEFORE_DEPLOY_SCRIPT
-    - stage: before_deploy
-      script: TARGET_OS=linux TARGET_ARCH=armv7l exec $BEFORE_DEPLOY_SCRIPT
-    - stage: before_deploy
-      script: TARGET_OS=mac exec $BEFORE_DEPLOY_SCRIPT
+before_deploy:
+  - bash sh/ci/travis/before-deploy.sh
 
 before_script:
   - chmod -R +x sh
