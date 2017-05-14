@@ -24,7 +24,6 @@
   "build": {
     "appId": "app.electron.demo",
     "copyright": "Copyright © 2017 Hoàng Văn Khải",
-    "artifactName": "${productName}.v${version}.${os}-${arch}.${ext}",
     "linux": {
       "target": [
         "freebsd",
