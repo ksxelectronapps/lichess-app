@@ -17,6 +17,9 @@ cache:
 before_script:
   - chmod -R +x sh
 
+script:
+  test: yarn test
+
 before_deploy:
   - source ./sh/deploy/before.sh
 
