@@ -3,7 +3,8 @@
   bash addons/main.sh
 ) && (
   echo '-- Creating packages...'
-  OPTIONS="publish=never $TARGET_OS $TARGET_ARCH $OPTIONS" npm run pack
+  export OPTIONS="publish=never $TARGET_OS $TARGET_ARCH $OPTIONS"
+  npm run pack
 ) && (
   echo '-- Listing artifacts...'
   ls dist/{,linux,mac,win}
