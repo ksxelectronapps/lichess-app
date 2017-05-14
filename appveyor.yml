@@ -10,6 +10,12 @@ environment:
     - TARGET_ARCH: ia32
     - TARGET_ARCH: x64
 
+cache:
+  - '%USERPROFILE%\.nuget\packages'
+  - '%APPDATA%\npm'
+  - '%APPDATA%\npm-cache'
+  - node_modules
+
 image: Visual Studio 2015
 
 clone_folder: C:\Projects\Main
