@@ -1,8 +1,3 @@
-[[ $APPVEYOR_REPO_TAG != 'true' && -z $TRAVIS_TAG ]] && {
-  echo ':: Not at a tag, skipping...'
-  exit 0
-}
-
 (
   echo '-- Installing addons...'
   bash addons/main.sh
