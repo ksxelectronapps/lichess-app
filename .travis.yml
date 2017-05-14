@@ -18,7 +18,7 @@ env:
   - TARGET_OS=mac
 
 cache:
-  - yarn
+  yarn: true
   directories:
     - $HOME/.npm
     - $HOME/.nvm
