@@ -17,6 +17,9 @@ env:
     TARGET_ARCH=armv7l
   - TARGET_OS=mac
 
+before_script:
+  - chmod -R +x sh
+
 before_deploy:
   - bash sh/ci/travis/before-deploy.sh
 
