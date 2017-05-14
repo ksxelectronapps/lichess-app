@@ -33,9 +33,6 @@ install:
 before_script:
   - chmod -R +x sh
 
-script:
-  test: yarn test
-
 before_deploy:
   - bash sh/ci/travis/before-deploy.sh
 
