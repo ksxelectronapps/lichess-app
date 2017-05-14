@@ -5,6 +5,7 @@ node_js:
   - '6'
 
 cache:
+  - yarn
   directories:
     - $HOME/.npm
     - $HOME/.nvm
