@@ -3,6 +3,7 @@ branches:
     - gh-pages
 
 environment:
+  ALTER_NPM: yarn
   OPTIONS: publish=never
   TARGET_OS: windows
   nodejs_version: 7

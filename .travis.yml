@@ -32,6 +32,7 @@ install:
 
 before_script:
   - chmod -R +x sh
+  - export ALTER_NPM=yarn
 
 before_deploy:
   - bash sh/ci/travis/before-deploy.sh

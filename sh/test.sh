@@ -1,3 +1,9 @@
+[[ -z $ALTER_NPM ]] || {
+  npm=$ALTER_NPM
+  export ALTER_NPM=''
+  exec $npm test
+}
+
 [[ $SKIP_NPM_TEST == 'true' ]] && (
   echo "Environment variable SKIP_NPM_TEST is true."
   echo "Skipping test..."
