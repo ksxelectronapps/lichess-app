@@ -3,9 +3,12 @@ branches:
     - gh-pages
 
 environment:
-  OPTIONS: 'windows ia32 x64 publish=never'
+  OPTIONS: publish=never
+  TARGET_OS: windows
+  nodejs_version: 7
   matrix:
-    - nodejs_version: 7
+    - TARGET_ARCH: ia32
+    - TARGET_ARCH: x64
 
 image: Visual Studio 2015
 
@@ -29,7 +32,7 @@ test_script:
   - cmd: echo "Test" && npm test
 
 build_script:
-  - cmd: npm run pack
+  - cmd: bash sh/ci/appveyor/build.sh
   - cmd: dir
 
 artifacts:
