@@ -1,4 +1,7 @@
-(
+[[ $SKIP_NPM_TEST == 'true' ]] && (
+  echo "Environment variable SKIP_NPM_TEST is true."
+  echo "Skipping test..."
+) || (
   printf "Checking Code Style... "
   bash ./sh/lint.sh > stdout.tmp 2> stderr.tmp && (
     echo "passed"
