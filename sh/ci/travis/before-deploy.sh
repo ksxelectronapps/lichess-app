@@ -4,6 +4,7 @@
 ) && (
   echo '-- Creating packages...'
   export OPTIONS="publish=never $TARGET_OS $TARGET_ARCH $OPTIONS"
+  export SKIP_NPM_TEST='true'
   npm run pack
 ) && (
   echo '-- Listing artifacts...'
