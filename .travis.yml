@@ -27,6 +27,9 @@ cache:
     - $HOME/node_modules
     - node_modules
 
+install:
+  - yarn install
+
 before_script:
   - chmod -R +x sh
 
