@@ -2,6 +2,8 @@
 *.log
 quick-test
 test
+docs
+addons
 tmp
 temp
 tmp.*
@@ -17,4 +19,3 @@ temp.*
 /appveyor.yml
 /circle.yml
 /sh
-docs

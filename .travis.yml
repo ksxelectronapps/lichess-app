@@ -1,11 +1,24 @@
 
 language: node_js
 
+dist: trusty
+
+sudo: required
+
 node_js:
   - '6'
 
+env:
+  - TARGET_OS=linux
+    TARGET_ARCH=ia32
+  - TARGET_OS=linux
+    TARGET_ARCH=x64
+  - TARGET_OS=linux
+    TARGET_ARCH=armv7l
+  - TARGET_OS=mac
+
 cache:
-  - yarn
+  yarn: true
   directories:
     - $HOME/.npm
     - $HOME/.nvm
@@ -21,16 +34,18 @@ script:
   test: yarn test
 
 before_deploy:
-  - source ./sh/deploy/before.sh
+  - bash sh/ci/travis/before-deploy.sh
 
 deploy:
   provider: releases
   api_key: $GITHUB_RELEASE_OAUTH
   skip_cleanup: true
   file_glob: true
-  file: $(./sh/deploy/file.sh)
+  file:
+    - dist/*.*
+    - dist/linux/*.*
+    - dist/mac/*.7z
+    - dist/mac/*.zip
+    - dist/win/*.*
   on:
     tags: true
-
-after_deploy:
-  - source ./sh/deploy/after.sh

@@ -1,14 +1,55 @@
 {
   "version": "0.0.0",
-  "main": "index.js",
+  "main": "app/main.js",
   "author": "Hoàng Văn Khải <hvksmr1996@gmail.com>",
   "devDependencies": {
-    "standard": "10.0.2"
+    "electron": "^1.6.6",
+    "electron-builder": "^8.6.0",
+    "electron-builder-squirrel-windows": "^17.0.1",
+    "js-yaml": "^3.8.3",
+    "htmllint-cli": "^0.0.6",
+    "stylelint": "^7.10.1",
+    "standard": "^10.0.2"
   },
   "scripts": {
+    "lint": "bash sh/lint.sh",
+    "dist": "bash sh/dist.sh",
+    "pack": "bash sh/pack.sh",
     "remake-package-json": "node sh/remake-package-json",
     "clean": "bash 'sh/clean.sh'",
     "fix": "bash 'sh/fix.sh'",
+    "start": "bash 'sh/start.sh'",
     "test": "bash 'sh/test.sh'"
+  },
+  "build": {
+    "appId": "app.electron.demo",
+    "copyright": "Copyright © 2017 Hoàng Văn Khải",
+    "artifactName": "${productName}.v${version}.${os}-${arch}.${ext}",
+    "linux": {
+      "target": [
+        "freebsd",
+        "AppImage",
+        "pacman",
+        "deb",
+        "rpm",
+        "zip",
+        "7z"
+      ]
+    },
+    "win": {
+      "target": [
+        "nsis",
+        "zip",
+        "7z"
+      ]
+    },
+    "mac": {
+      "target": [
+        "mas",
+        "zip",
+        "7z"
+      ],
+      "categories": "public.app-category.utilities"
+    }
   }
 }
