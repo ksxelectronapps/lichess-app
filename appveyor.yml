@@ -10,6 +10,14 @@ environment:
     - TARGET_ARCH: ia32
     - TARGET_ARCH: x64
 
+cache:
+  - '%USERPROFILE%\.nuget\packages'
+  - '%APPDATA%\npm'
+  - '%APPDATA%\npm-cache'
+  - '%APPDATA%\yarn'
+  - '%APPDATA%\yarn-cache'
+  - node_modules
+
 image: Visual Studio 2015
 
 clone_folder: C:\Projects\Main
@@ -19,17 +27,13 @@ clone_depth: 1
 install:
   - cmd: echo "Repo URL" && git remote get-url origin
   - cmd: dir
-  - ps: Install-Product node $env:nodejs_version
-  - cmd: IF %nodejs_version% EQU 0.8 npm -g install npm@2
-  - cmd: IF %nodejs_version% EQU 0.8 set PATH=%APPDATA%\npm;%PATH%
-  - cmd: npm -g install npm
-  - cmd: IF %nodejs_version% NEQ 0.8 set PATH=%APPDATA%\npm;%PATH%
-  - cmd: npm install
+  - ps: powershell sh/ci/appveyor/install.ps1
+  - cmd: yarn install
 
 test_script:
   - cmd: echo "NodeJS version" && node --version
-  - cmd: echo "NPM version" && npm --version
-  - cmd: echo "Test" && npm test
+  - cmd: echo "Yarn version" && yarn --version
+  - cmd: echo "Test" && yarn test
 
 build_script:
   - cmd: bash sh/ci/appveyor/build.sh
