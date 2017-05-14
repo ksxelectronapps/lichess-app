@@ -1,3 +1,9 @@
+[[ -z $ALTER_NPM ]] || {
+  npm=$ALTER_NPM
+  export ALTER_NPM=''
+  exec $npm test
+}
+
 (
   printf "Checking Code Style... "
   standard > stdout.tmp 2> stderr.tmp && (
